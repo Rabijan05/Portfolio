@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<section class="contact-wrapper">
+  <h2>Contact Me</h2>
+  <p>If you’d like to connect or have a question, feel free to reach out.</p>
+
+  <form method="POST" action="/contact" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Cell Number (10 digits)" pattern="[0-9]{10}" required>
+    <textarea name="comments" placeholder="Your Message" required></textarea>
+    <button type="submit">
+      <i class="fa-solid fa-paper-plane"></i> Send Message
+    </button>
+  </form>
+</section>
+
+<%- include('partials/footer') %>
