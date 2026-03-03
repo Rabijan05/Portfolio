@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homelab - Rabijan Ragupalan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Rabijan Ragupalan</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Page -->
+    <section class="project-page">
+        <div class="container">
+            <div class="project-page-header">
+                <a href="projects.html" class="back-link">← Back to Projects</a>
+                <h1 class="section-title">Homelab (NAS + Self-Hosted Services)</h1>
+                <p class="project-page-subtitle">
+                    Personal infrastructure build focused on storage reliability, private services, and hands-on systems administration.
+                </p>
+            </div>
+
+            <div class="project-page-grid">
+                <div class="project-page-card">
+                    <h2>What I Built</h2>
+                    <ul class="project-bullets">
+                        <li>Configured a personal NAS for media, backups, and home services.</li>
+                        <li>Deployed containerized apps for monitoring and dashboards.</li>
+                        <li>Set up a data logging + visualization stack for vehicle telemetry.</li>
+                    </ul>
+                </div>
+
+                <div class="project-page-card card-split">
+                    <div class="card-text">
+                        <h2>Hardware</h2>
+                        <div class="project-kv">
+                        <p><strong>Host:</strong> HP Laptop Notebook</p>
+                        <p><strong>Specs:</strong> CPU: Ryzen 3 2200u, No dedicated GPU, Ram: 8GB DDR4</p>
+                        <p><strong>Conectivity:</strong> 1GB Ethernet, 3x USB 3.0, 1x HDMI, 1xSD card reader</p>
+                        <p><strong>Internal Drive:</strong> WD Hard Drive 1TB</p>
+                        <p><strong>Storage:</strong> 1× WD Passport 4TB, 1× Seagate SlimBackup Plus 2TB</p>
+                    </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="Images/Hardware.jpg" alt="Homelab hardware setup">
+                    </div>
+                </div>
+
+                <div class="project-page-card">
+                    <h2>Software & Stack</h2>
+                    <div class="project-kv">
+                        <p><strong>OS:</strong> Lubuntu</p>
+                        <p><strong>Containers:</strong> Docker</p>
+                        <p><strong>Core Services:</strong> Jellyfin, TeslaMate, Grafana, MQTT, PostgreSQL (TeslaMate DB)</p>
+                    </div>
+                    <div class="project-tags" style="margin-top: 1rem;">
+                        <span>NAS</span>
+                        <span>Linux</span>
+                        <span>Docker</span>
+                        <span>OpenMediaVault</span>
+                        <span>Grafana</span>
+                    </div>
+                </div>
+
+                <div class="project-page-card">
+                    <h2>Key Outcomes</h2>
+                    <ul class="project-bullets">
+                        <li>Centralized storage for media and important files.</li>
+                        <li>Self-hosted services running reliably on my home network.</li>
+                        <li>Practical experience with networking, storage, and container operations.</li>
+                    </ul>
+                </div>
+
+                            
+                <div class="project-page-card project-page-card-wide">
+                    <h2>Highlights</h2>
+                    <div class="highlights-grid">
+<div class="highlight">
+                            <img src="Images/GrafanaTeslaStats.png" alt="TeslaMate Grafana dashboard">
+                            <h3>Telemetry Dashboard</h3>
+                            <p>Used TeslaMate to capture driving + charging data and Grafana dashboards to visualize trends over time.</p>
+                        </div>
+                        <div class="highlight">
+                            <img src="Images/Jellyfin.png" alt="Jellyfin media server">
+                            <h3>Media Server</h3>
+                            <p>Jellyfin for organizing and streaming my library across devices (direct play + remote access as needed).</p>
+                        </div>
+                        <div class="highlight">
+                            <img src="Images/Homarr.png" alt="Homarr dashboard">
+                            <h3>Service Hub</h3>
+                            <p>Homarr dashboard to keep all services organized with quick links and status visibility.</p>
+                        </div>
+                        <div class="highlight">
+                            <img src="Images/DashDot.png" alt="DashDot system dashboard">
+                            <h3>System Monitoring</h3>
+                            <p>DashDot for a clean overview of CPU, memory, storage, and system uptime at a glance.</p>
+                        </div>
+    
+                    </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Rabijan Ragupalan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -478,3 +478,113 @@ body {
         font-size: 0.8rem;
     }
 }
+
+/* --- Homelab / Project detail pages (stacked layout) --- */
+.project-page-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Keep the same "card" visual language as project cards */
+.project-page-card{
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.project-page-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-page-card-wide{
+    width: 100%;
+}
+
+/* Highlights can stay as a grid for visual interest */
+.highlights-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.highlight{
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+/* ===== Homelab inline images (cards) ===== */
+
+/* Two-column card layout (text + image) */
+.card-split{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 1.75rem;
+    align-items: center;
+}
+
+.card-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.22);
+}
+
+/* Highlight cards with images */
+.highlight img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+/* Make highlight background match dark theme (override earlier light highlight bg) */
+.highlight{
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* Responsive: stack text/image on small screens */
+@media (max-width: 900px){
+    .card-split{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Back to Projects button ===== */
+
+.project-page-header{
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Make the back link look like a real button and align naturally */
+.back-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    background: rgba(0, 212, 255, 0.06);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.back-link:hover{
+    transform: translateY(-2px);
+    background: rgba(0, 212, 255, 0.10);
+    border-color: rgba(0, 212, 255, 0.55);
+}
